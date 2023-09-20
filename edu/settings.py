@@ -121,8 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = '/home/fbahromo/fbahromov.uz/django/staticfiles'
-STATICFILES_DIRS = ('/home/fbahromo/fbahromov.uz/django/static', )
+STATIC_ROOT = '/home/fbahrom1/fbahromov.uz/django/staticfiles'
+STATICFILES_DIRS = ('/home/fbahrom1/fbahromov.uz/django/static', )
 # STATICFILES_DIRS = [BASE_DIR / 'static']
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_FINDERS = [
@@ -138,6 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = '/home/fbahromo/fbahromov.uz/django/media'
+MEDIA_ROOT = '/home/fbahrom1/fbahromov.uz/django/media'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
