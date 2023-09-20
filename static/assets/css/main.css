@@ -1,0 +1,38 @@
+.prof{
+width: 400px !important;
+}
+prof-card{
+    width: 100% !important;
+}
+.down-icon{
+width: 30px !important;
+}
+.youtube{
+   width: 100% !important;
+   height: 480px !important;
+}
+.youtube-card{
+    width: 100% !important;
+    /* height: 240px !important; */
+}
+
+@media screen and (max-width: 520px) {
+    .prof{
+        width: 250px !important;
+        }
+    .youtube{
+        width: 360px !important;
+        height: 240px !important;
+    }
+    .youtube-card{
+       padding-left: 0 !important;
+       padding-right: 0 !important;
+    }
+    .youtube-row{
+        width: 90% !important;
+    }
+    prof-card{
+        width: 90% !important;
+        margin: 0;
+    }
+}

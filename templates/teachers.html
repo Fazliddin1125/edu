@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Bizning mentorlar{% endblock title %}
+{% block content %}
+
+  <section class="section courses" data-section="section4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>{{ teacher.firstname}} {{ teacher.lastname }}</h2>
+          </div>
+        </div>
+        <div class=" prof-card col-md-12 d-md-flex px-md-2 justify-content-center bg-white py-3 ">
+        <div class="item m-auto text-center  w-35" >
+
+           <img  class="prof" src="{{ teacher.photo.url }}" alt="Author 1">
+          </div>
+          <div class="item w-75">
+
+            <div class="mt-0  px-2 fs-5 ">
+
+              <p><b>Ism:</b> {{ teacher.firstname }}</p>
+              <p><b>Familiya:</b> {{ teacher.lastname }}</p>
+              <p><b>Daraja:</b> {{ teacher.level }}</p>
+              <p><b>Yo'nalish:</b> {{ teacher.science }}</p>
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Kontentlar</h2>
+
+          </div>
+        </div>
+          <div class="w-100  d-flex justify-content-center align-items-center  ">
+           <table class="table table-hover  table-responsive-sm">
+  <thead class="bg-white " >
+    <tr  >
+      <th scope="col">#</th>
+      <th scope="col">Nomi</th>
+      <th scope="col">Turi</th>
+      <th scope="col">Fan</th>
+      <th scope="col">Tarif</th>
+      <th scope="col">Yuklab olish</th>
+    </tr>
+  </thead>
+  <tbody  class="bg-white ">
+  {% for document in documents %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ document.title }}</td>
+      <td>{{ document.type }}</td>
+      <td>{{ document.science }}</td>
+      <td>{{ document.comment }}</td>
+      <td class="  px-4" ><a class="down-icon" href="{{ document.pptx_file.url }}" > <img class="down-icon"  src="{% static 'assets/images/Download-Icon.png' %}" > </a></td>
+
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+          </div>
+
+          <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Kontentlar</h2>
+
+          </div>
+        </div>
+          <div class="col-md-12 youtube-card text-center  ">
+            
+              {% for video in videos %}
+             
+                 <div class="card my-2  w-100" >
+              <div class="card-header" >{{ video.title }}</div>
+              <div class="card-body text-center d-flex justify-content-center align-items-centre " >
+               <iframe class="youtube" src="https://www.youtube.com/embed/{{ video.link }}" title="{{ video.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="card-footer" >
+                <b>{{ video.teacher }}</b>
+              </div>
+            </div>
+              
+
+            {% endfor %}
+            
+
+          </div>
+      </div>
+<!--      -->
+    </div>
+  </section>
+
+
+
+{% endblock content %}

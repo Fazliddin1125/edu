@@ -1,0 +1,310 @@
+{% extends 'base.html' %}
+{% block title %}AnDMI Online{% endblock title %}
+{% load static %}
+{% block content %}
+    <!--header-->
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>BF</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Asosiy</a></li>
+        <li class="has-submenu"><a href="#section2">Biz haqimizda</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Biz kimmiz?</a></li>
+            <li><a href="#section3">Bizda yangilik</a></li>
+            
+            
+          </ul>
+        </li>
+        <li><a href="#section4">Mentorlar</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Aloqa</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>BF SCHOOL ONLINE</h6>
+              <h2><em>Ilmdan boshqa najot</em> yo'q va bo'lmagay</h2>
+              <div class="main-button">
+                  <div class="scroll-to-section"><a href="#section2">Biz bilan</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Barcha darslar</h4>
+              </div>
+              <div class="content-hide">
+                <p></p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Virtual Sinf</h4>
+              </div>
+              <div class="content-hide">
+                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Video uchrashuvlar</h4>
+              </div>
+              <div class="content-hide">
+                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Nega BF SCHOOL?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Sifatli ta'lim</a></li>
+              <li><a href='#tabs-2'>Malakali muallimlar</a></li>
+              <li><a href='#tabs-3'>Ilm muhiti</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-01.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Sifatli ta'lim</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam fuga veniam quam architecto. Voluptas nesciunt magnam eius assumenda eaque itaque omnis? Est aliquam, facilis excepturi ipsa officiis exercitationem labore.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-02.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Malakali muallimlar</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptates minima sed fugit ullam laboriosam error hic ut id, veniam tempora deserunt quas earum molestias. Distinctio nostrum vel sunt veniam.</p>
+                    
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-03.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Ilm muhiti</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem, sunt sapiente nisi perspiciatis quas eaque ad maxime suscipit architecto delectus, voluptates eum impedit. Similique ratione doloremque temporibus natus vero?</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Bootcamp <em>praktikum</em> kursini 50% chegirma bilan sotib oling </h4>
+              <div class="counter">
+
+                <div class="days">
+                  <div class="value">00</div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hours">
+                  <div class="value">00</div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="minutes">
+                  <div class="value">00</div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="seconds">
+                  <div class="value">00</div>
+                  <span>Seconds</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Ro'yxatdan o'ting</h6>
+            </div>
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Yuborish</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>O'z mentoringizni tanlang</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+            {% for teacher in teachers %}
+          <div class="item w-100">
+             <img src="{{ teacher.photo.url }}" alt="Author 1">
+
+            <div class="down-content">
+              <h4>{{ teacher.firstname }}</h4>
+              <p><b>Daraja:</b> {{ teacher.level }}</p>
+              <p><b>Yo'nalish:</b> {{ teacher.science }}</p>
+              <div class="author-image">
+                <img src="{{ teacher.photo.url }}" alt="Author 1">
+              </div>
+              <div class="text-button-pay">
+                <a href="{% url 'teachers' teacher.id %}">Kirish <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+            {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Biz bilan aloqa</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+
+        <!-- Do you need a working HTML contact-form script?
+
+                    Please visit https://templatemo.com/contact page -->
+
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=422&amp;hl=en&amp;q=Andijan Machina Building Intitute&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Unlimited</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:422px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:422px;}.gmap_iframe {height:422px!important;}</style></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
+
+
