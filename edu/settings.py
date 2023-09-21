@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ["fbahromov.uz", 'www.fbahromov.uz', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["muahammadiso.uz", 'www.muhammadiso.uz', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -120,9 +120,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = '/home/fbahrom1/fbahromov.uz/django/staticfiles'
-STATICFILES_DIRS = ('/home/fbahrom1/fbahromov.uz/django/static', )
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/muhamm28/muahammadiso.uz/django/staticfiles'
+STATICFILES_DIRS = ('/home/muhamm28/muhammadiso.uz/django/static', )
 # STATICFILES_DIRS = [BASE_DIR / 'static']
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_FINDERS = [
@@ -138,6 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = '/home/fbahrom1/fbahromov.uz/django/media'
+MEDIA_ROOT = '/home/muhamm28/muhammadiso.uz/django/media'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
