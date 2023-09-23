@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
-from pathlib import Path
 from decouple import config
+from pathlib import Path
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY='django-insecure-)dukxi%v3y$)8bw8j0+kdeg9^p6$2ks!^zpv$sv*dwq$sy(932'
 SECRET_KEY = config('SECRET_KEY')
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", default=False, cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ["muahammadiso.uz", 'www.muhammadiso.uz', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["muahammadiso.uz", 'www.muhammadiso.uz', 'localhost:8000', '127.0.0.1']
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 
 ]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -140,4 +140,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = '/home/muhamm28/muhammadiso.uz/django/media'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
