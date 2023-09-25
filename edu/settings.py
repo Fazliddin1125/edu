@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY='django-insecure-)dukxi%v3y$)8bw8j0+kdeg9^p6$2ks!^zpv$sv*dwq$sy(932'
 SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+# DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
-ALLOWED_HOSTS = ["muahammadiso.uz", 'www.muhammadiso.uz', 'localhost:8000', '127.0.0.1']
+ALLOWED_HOSTS = ["muahammadiso.uz", 'www.muhammadiso.uz', 'http://muhammadiso.uz/', 'http://muhammadiso.uz/']
 
 
 # Application definition
@@ -120,11 +121,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = '/home/muhamm28/muahammadiso.uz/django/staticfiles'
-STATICFILES_DIRS = ('/home/muhamm28/muhammadiso.uz/django/static', )
-# STATICFILES_DIRS = [BASE_DIR / 'static']
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATIC_URL = '/static/'
+# STATIC_ROOT = '/home/muhamm28/muahammadiso.uz/django/staticfiles'
+# STATICFILES_DIRS = ('/home/muhamm28/muhammadiso.uz/django/static', )
+STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -134,10 +135,10 @@ STATICFILES_FINDERS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# MEDIA_URL = 'media/'
-# MEDIA_ROOT = BASE_DIR / 'media'
-
 MEDIA_URL = 'media/'
-MEDIA_ROOT = '/home/muhamm28/muhammadiso.uz/django/media'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = '/home/muhamm28/muhammadiso.uz/django/media'
 
 
